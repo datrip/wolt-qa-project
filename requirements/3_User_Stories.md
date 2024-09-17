@@ -2,11 +2,14 @@
 
 ### 3.1 User Registration and Login
 
-- As a new user, I want to sign up using my email or a third-party service (Google, Apple, Facebook) so I can create an account and use Wolt's services.
-- As a returning user, I want the system to recognize my email when I log in so I don't have to re-enter my details.
-- As a user, I want a simple interface for logging in and signing up so I can easily switch between creating an account and logging in.
-- As a user, I want my login information to be checked securely so my account and personal data are safe.
-- As a user, I want to stay logged in after I sign in so I don't have to log in again while using the website.
+- As a new user, I want to register using my email address so that I can create a Wolt account.
+- As a new user, I want to sign up using a social media account (Google, Apple, Facebook) so that I can register quickly
+- As a returning user, I want to log in using my email address so that I can access my account.
+- As a returning user, I want to log in using my social media account so that I can access my account easily.
+- As a new user, I want to provide my full name and my phone number, so that I can receive order updates.
+- As a new user, I want to verify my phone number during registration so that I can confirm my identity and activate my account.
+- As a user, I want to set my preferences for receiving notifications, so that I only get communications I'm interested in.
+- As a user, I want to contact support during registration if I encounter issues so that I can get help and complete the process.
 
 ### 3.2 Restaurant Search and Filtering
 
