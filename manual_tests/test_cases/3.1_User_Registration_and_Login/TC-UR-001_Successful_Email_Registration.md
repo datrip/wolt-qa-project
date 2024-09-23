@@ -115,30 +115,50 @@
   The email input accepts **testuser@wolt.com**, and clicking **"Next"** initiates the registration process.
 
 - **Step 6**:  
-  The "Great, check your inbox!" modal appears with the correct message, and the **"Resend email"** button is visible.
+  The "Great, check your inbox!" modal appears with:
+  - Title: "Great, check your inbox!"
+  - Message: "We've just sent a sign-in link to testuser@wolt.com. Please check your spam folder in case you didn't receive the email."
+  - A "Resend email" button (large button with secondary styling)
 
 - **Step 7**:  
-  An email from **`info@wolt.com`** with the subject "Welcome to Wolt" is received. The email contains the Wolt logo, a welcome message, and a **"Register a new Wolt Account"** button.
+  An email from **`info@wolt.com`** with the subject "Welcome to Wolt" is received. The email contains:
+  - A large blue circular Wolt logo in the center
+  - Message: "Hi, we'll set you up with a Wolt account in no time. Just click the button below!"
+  - A big blue square button that says "Register a new Wolt Account"
 
 - **Step 8**:  
   Clicking the **"Register a new Wolt Account"** button opens a new browser tab displaying the registration form.
 
 - **Step 9**:  
-  All registration form elements are present, correctly labeled, and functional:
-    - Country selection dropdown.
-    - "First name" and "Last name" input fields.
-    - Phone Number field with country code.
-    - **"Next"** button.
-    - Terms of service and privacy statement links are clickable.
+  The registration form contains:
+  - A close button (X) at the top
+  - Main title: "Create an account"
+  - Country selection dropdown
+  - "First name" and "Last name" input fields side by side
+  - Phone number section with country code dropdown and phone number input
+  - A note about using the number for order-related contact
+  - A big blue "Next" button
+  - Small text about agreeing to Terms of Service and Privacy Statement (with links)
 
 - **Step 10**:  
   The form accepts **Vardas**, **Pavardė**, and **+37061234567** as valid inputs, and clicking **"Next"** proceeds to the next step.
 
 - **Step 11**:  
-  The "Never miss a great deal" modal appears with the correct message. The **"Email & notifications"** toggle is enabled by default, remains **ON** after selection, and clicking **"Save"** proceeds without issues.
+  The "Never miss a great deal" modal appears with:
+  - Back button (left arrow) and close button (X) at the top
+  - Main title: "Never miss a great deal"
+  - Subtitle: "Get special offers and promotions via"
+  - "Email & notifications" toggle (enabled by default)
+  - An image of a cartoon character or mascot
+  - Two buttons: "No, thanks" (grey) and "Save" (blue)
 
 - **Step 12**:  
-  The "Enter your code" modal appears with the correct message. The verification code sent via SMS is accepted, and entering it successfully proceeds to the next step.
+  The "Enter your code" modal appears with:
+  - Close button (X) at the top
+  - Main title: "Enter your code"
+  - Message: "We've sent a verification code to +37061234567. Enter the 5-digit code below to confirm your phone number."
+  - Five empty boxes for code entry
+  - "I didn't get a code" button
 
 - **Step 13**:  
   The success message "Your phone number has been verified!" displays briefly, and the modal closes automatically.
