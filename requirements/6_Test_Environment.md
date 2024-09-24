@@ -6,4 +6,4 @@
   * Mobile (iOS, Android)
   * Tablet (iOS, Android)
 - Tools: 
-  * Selenium WebDriver for automation
+  * Playwright for automation
