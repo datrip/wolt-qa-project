@@ -1,30 +1,36 @@
 import { expect, Page } from '@playwright/test';
 
-
 export class HomePage {
   readonly page: Page;
 
-  // Locators
-  readonly signUpButton;
-  readonly logInButton;
-
   constructor(page: Page) {
     this.page = page;
-    this.signUpButton = page.getByTestId("UserStatus.Login");
-    this.logInButton = page.getByTestId("UserStatus.Register");
   }
 
-  // Navigate to the homepage
+  // Navigate to the homepage and verify the title
   async navigate() {
     await this.page.goto('/');
     await expect(this.page).toHaveTitle(/Wolt Delivery: Food and more*/);
   }
 
-  // Open registration modal
+  // Open the registration modal by clicking the sign-up button
   async openRegistrationModal() {
-    await this.signUpButton.click(); 
-
-
+    // Locate the sign-up button within this method
+    const signUpButton = this.page.getByTestId("UserStatus.Login");
+    await signUpButton.click();
   }
 
+  // Close the popup if it's visible
+  async closePopup() {
+    // Wait for potential popup to appear
+    await this.page.waitForTimeout(2000);
+
+    // Locate the accept button within this method
+    const acceptButton = this.page.getByTestId("allow-button");
+
+    // If the accept button is visible, click it to close the popup
+    if (await acceptButton.isVisible()) {
+      await acceptButton.click();
+    }
+  }
 }
