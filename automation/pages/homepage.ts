@@ -3,8 +3,13 @@ import { expect, Page } from '@playwright/test';
 export class HomePage {
   readonly page: Page;
 
+  userMenu;
+  userMenu_Profile;
   constructor(page: Page) {
     this.page = page;
+
+    this.userMenu = this.page.getByTestId("UserStatus.ProfileImage");
+    this.userMenu_Profile = this.page.getByTestId("UserMenuItem.Profile");
   }
 
   // Navigate to the homepage and verify the title
@@ -32,5 +37,11 @@ export class HomePage {
     if (await acceptButton.isVisible()) {
       await acceptButton.click();
     }
+  }
+
+  async verifyLoggedIn(){
+    await expect(this.userMenu).toBeVisible();
+    await expect(this.userMenu_Profile).toBeVisible();
+
   }
 }

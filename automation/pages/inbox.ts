@@ -5,14 +5,16 @@ config();
 
 export class Inbox {
     readonly page: Page;
+    readonly isRegistered: boolean;
 
     // Locators
     readonly senderEmail;
     readonly registerLink;
     readonly loginLink;
 
-    constructor(page: Page) {
+    constructor(page: Page, isRegistered: boolean = false) {
         this.page = page;
+        this.isRegistered = isRegistered;
 
         // Locators
         this.senderEmail = page.locator('address[title="info@wolt.com"]');
@@ -78,8 +80,12 @@ export class Inbox {
 
     // Log in to the inbox using provided credentials
     async loginInbox() {
-        const email = process.env.INBOX_EMAIL || '';
-        const password = process.env.INBOX_PASSWORD || '';
+        const email = this.isRegistered 
+            ? process.env.REGISTERED_INBOX_EMAIL 
+            : process.env.NEW_INBOX_EMAIL;
+        const password = this.isRegistered 
+            ? process.env.REGISTERED_INBOX_PASSWORD 
+            : process.env.NEW_INBOX_PASSWORD;
 
         if (!email || !password) {
             throw new Error('Email or password are not defined in environment variables.');
@@ -94,5 +100,33 @@ export class Inbox {
         await submitButton.click();
 
         await this.closePopup();
+    }
+
+    async checkMultipleEmails(){
+        const emailSubject = this.isRegistered ? "Log in to Wolt" : "Welcome to Wolt";
+        const expectedCount = 5;  // We expect at least 5 emails
+
+        const emails = this.page.locator('#maillist-container > div > a')
+        .filter({ hasText: emailSubject });
+
+        // Count the emails
+        const count = await emails.count();
+
+        // Check if we have at least the expected number of emails
+        if (count >= expectedCount) {
+            console.log(`Found ${count} emails with subject "${emailSubject}"`);
+        } else {
+            throw new Error(`Expected at least ${expectedCount} emails with subject "${emailSubject}", but found ${count}`);
+        }
+
+        // Click on the most recent email (first in the list)
+        await emails.first().click();
+        
+        // Verify the content of the most recent email
+        if (this.isRegistered) {
+            await this.verifyLoginEmail();
+        } else {
+            await this.verifyRegistrationEmail();
+        }
     }
 }
