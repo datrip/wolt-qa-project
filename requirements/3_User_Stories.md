@@ -6,8 +6,6 @@
 - As a new user, I want to sign up using a social media account (Google, Apple, Facebook) so that I can register quickly
 - As a returning user, I want to log in using my email address so that I can access my account.
 - As a returning user, I want to log in using my social media account so that I can access my account easily.
-- As a new user, I want to provide my full name and my phone number, so that I can receive order updates.
-- As a new user, I want to verify my phone number during registration so that I can confirm my identity and activate my account.
 - As a user, I want to set my preferences for receiving notifications, so that I only get communications I'm interested in.
 - As a user, I want to contact support during registration if I encounter issues so that I can get help and complete the process.
 
