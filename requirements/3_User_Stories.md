@@ -7,7 +7,7 @@
 - As a returning user, I want to log in using my email address so that I can access my account.
 - As a returning user, I want to log in using my social media account so that I can access my account easily.
 - As a user, I want to set my preferences for receiving notifications, so that I only get communications I'm interested in.
-- As a user, I want to contact support during registration if I encounter issues so that I can get help and complete the process.
+- As a user, I want to access support options during registration if I encounter issues so that I can get help and complete the process.
 
 ### 3.2 Restaurant Search and Filtering
 
