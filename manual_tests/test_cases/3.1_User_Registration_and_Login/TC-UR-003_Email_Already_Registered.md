@@ -1,6 +1,6 @@
 **Test Case ID**: TC-UR-003
 
-**Title**: Verify that the system handles registration with an email that is already registered.
+**Title**: Verify that the system handles registration with an email that is already registered
 
 **Test Objective**: Ensure that when a user attempts to register with an email address that is already associated with an existing Wolt account, the system prevents duplicate account creation and guides the user to log in instead.
 
@@ -11,110 +11,128 @@
 
 **Preconditions**:
 
-- The user is on the Wolt homepage (`https://wolt.com`).
 - The user is not logged in.
-- The email address used for registration is already registered with Wolt.
-- The email account is accessible for receiving emails.
+- The email address **existinguser@wolt.com** is already registered with Wolt.
+- The email account **existinguser@wolt.com** is accessible for receiving emails.
 
 **Test Data**:
 
-- **Email Address**: existinguser@wolt.com (an email address that is already registered)
+- **Email Address**: existinguser@wolt.com
 
 **Test Steps**:
 
-1. **Navigate to the Wolt Homepage**:
-   - Open a web browser (e.g., Chrome or Firefox).
-   - Enter `https://wolt.com` in the address bar and press **Enter**.
+1. **Navigate to Wolt Homepage and Open Registration Modal**:
 
-2. **Open the Registration Modal**:
-   - Click on **"Sign up"** button located at the top right corner of the homepage.
+   - **Reference**: Complete **Steps 1-2** of **[TC-UR-001_Successful_Email_Registration](TC-UR-001_Successful_Email_Registration.md)**.
 
-3. **Attempt Registration with an Already Registered Email**:
-   - In the registration modal, enter the email address **`existinguser@wolt.com`** in the "Email" input field.
+2. **Attempt Registration with an Already Registered Email**:
+
+   - In the registration modal, enter **existinguser@wolt.com** into the email field.
    - Click the **"Next"** button.
 
+3. **Verify Email Confirmation Modal**:
+
+   - Observe the modal that appears after clicking **"Next"**.
+
 4. **Check for Sign-In Email**:
-   - Log in to the email account **`existinguser@wolt.com`**.
+
+   - Log in to the **existinguser@wolt.com** email account.
    - Locate the email from **`info@wolt.com`** with the subject **"Log in to Wolt"**.
    - Open the email.
 
 5. **Log In Using the Email Link**:
-   - Click on the **"Sign in"** button within the email.
 
-6. **Confirm Successful Login**:
-   - Verify that you are logged into the Wolt account associated with **`existinguser@wolt.com`**.
+   - Click on the **"Log in"** button within the email.
+
+6. **Verify Successful Login**:
+
+   - Confirm that you are redirected to the Wolt homepage.
+   - Verify that you are logged in, and your user icon or initials appear in the top right corner.
+   - Click on the user icon and confirm that account options are accessible.
 
 **Expected Results**:
 
 - **Step 1**:
-  - The Wolt homepage loads successfully without any errors.
+  - The Wolt homepage loads successfully without errors.
+  - Clicking the **"Sign up"** button opens the registration modal.
 
 - **Step 2**:
-  - The registration modal titled **"Create an account or log in"** appears.
+  - The email input accepts **existinguser@wolt.com**, and clicking **"Next"** initiates the process.
 
 - **Step 3**:
-  - Upon clicking **"Next"**, the system recognizes that the email is already registered.
-  - A message is displayed prompting the user to check their inbox for a sign-in link:
-    - The modal shows **"Great, check your inbox!"** with the message:
+  - A modal appears with the message:
+    - **"Great, check your inbox!"** with the text:
       - **"We've just sent a sign-in link to existinguser@wolt.com. Please check your spam folder in case you didn't receive the email."**
-    - A **"Resend email"** button is available.
+  - A **"Resend email"** button is available.
 
 - **Step 4**:
   - An email from **`info@wolt.com`** with the subject **"Log in to Wolt"** is received.
   - The email contains:
-    - The Wolt logo at the top of the email.
+    - The Wolt logo.
     - A greeting message: **"Hello! You can sign in to Wolt by clicking the button below. Enjoy Wolt!"**
-    - A blue **"Sign in"** button.
+    - A **"Log in"** button.
 
 - **Step 5**:
-  - Clicking the **"Sign in"** button opens a new browser tab or window.
-  - The system securely logs the user into their existing Wolt account without requiring additional credentials.
+  - Clicking the **"Log in"** button opens a new browser tab.
+  - The system logs the user into their existing Wolt account without requiring additional credentials.
 
 - **Step 6**:
-  - The user is redirected to the Wolt homepage or dashboard.
-  - The user is logged in (account icon is visible at the top right corner).
-  - The user has access to all features available to logged-in users.
+  - The user is redirected to the Wolt homepage.
+  - The user's profile icon or initials are displayed in the top right corner.
+  - Account options are accessible, indicating a successful login.
 
 **Actual Results**:
 
-**Step 1: Navigate to the Wolt Homepage**
+**Step 1: Navigate to Wolt Homepage and Open Registration Modal**
+
+- Followed **Steps 1-2** of **[TC-UR-001](TC-UR-001_Successful_Email_Registration.md)**.
 - The Wolt homepage loaded successfully without any errors.
-- The website's main page displayed as expected.
+- Clicked on the **"Sign up"** button, and the registration modal appeared.
 
-**Screenshot**: [Wolt Homepage - Sign Up or Log In Buttons](../../images/TC-UR-003/TC-UR-003_Homepage.png)
 
-**Step 2: Open the Registration Modal**
-- Clicking on the "Sign Up" button at the top right corner of the homepage triggered the registration modal.
-- The modal titled "Create an account or log in" appeared centered on the page.
+**Step 2: Attempt Registration with an Already Registered Email**
 
-**Screenshot**: [Wolt Homepage Displaying Registration/Login Modal](../../images/TC-UR-003/TC-UR-003_Signup_Modal.png)
+- Entered **existinguser@wolt.com** into the email field.
+- Clicked the **"Next"** button.
+- The system accepted the email and processed the request.
 
-**Step 3: Attempt Registration with an Already Registered Email**
-- Entered "existinguser@wolt.com" into the email field.
-- Clicked the "Next" button.
-- The system displayed the "Great, check your inbox!" modal with the message: "We've just sent a sign-in link to existinguser@wolt.com. Please check your spam folder in case you didn't receive the email."
-- The "Resend email" button was present and functional.
 
-**Screenshot**: [Already Registered Email Response Modal](../../images/TC-UR-003/TC-UR-003_Email_Sent.png)
+**Step 3: Verify Email Confirmation Modal**
+
+- The "Great, check your inbox!" modal appeared.
+- The message stated: "We've just sent a sign-in link to **existinguser@wolt.com**. Please check your spam folder in case you didn't receive the email."
+- The **"Resend email"** button was visible.
+
+**Screenshot**: [Email Confirmation Modal](../../images/TC-UR-003/TC-UR-003_Email_Sent.png)
+
 
 **Step 4: Check for Sign-In Email**
-- Logged into the "existinguser@wolt.com" email account successfully.
-- Received an email from "info@wolt.com" with the subject "Log in to Wolt."
-- The email contained the Wolt logo, a greeting message ("Hello! You can sign in to Wolt by clicking the button below. Enjoy Wolt!"), and a blue "Sign in" button.
-- All links and images in the email loaded correctly.
 
-**Screenshot**: [Log In Email from Wolt](../../images/TC-UR-003/TC-UR-003_Login_Email.png)
+- Logged into the **existinguser@wolt.com** email account.
+- Received an email from **`info@wolt.com`** with the subject **"Log in to Wolt"**.
+- The email contained:
+  - Wolt logo.
+  - Greeting message: "Hello! You can sign in to Wolt by clicking the button below. Enjoy Wolt!"
+  - A **"Log in"** button.
+
+**Screenshot**: [Log In Email](../../images/TC-UR-003/TC-UR-003_Login_Email.png)
+
 
 **Step 5: Log In Using the Email Link**
-- Clicked the "Log In" button in the email.
-- A new browser tab opened automatically.
-- The user was logged into their Wolt account without needing to enter any additional credentials.
 
-**Step 6: Confirm Successful Login**
+- Clicked the **"Log in"** button in the email.
+- A new browser tab opened.
+- The user was logged into their Wolt account without entering additional credentials.
+
+
+**Step 6: Verify Successful Login**
 
 - Automatically redirected to the Wolt homepage.
-- Clicked on the user icon located at the top right corner.
-- Verified that the Account menu was displayed on top right of the page
+- User's initials or profile icon appeared at the top right corner.
+- Clicked on the user icon and confirmed that account options were accessible.
+
+**Screenshot**: [Logged In Successfully](../../images/TC-UR-003/TC-UR-003_Homepage.png)
+
 
 **Status**:
 

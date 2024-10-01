@@ -95,6 +95,12 @@
     - Confirm redirection to the Wolt homepage.
     - Click on the user icon to access account options.
 
+15. **Verify Notification Settings**:
+   - Select **"Profile"**.
+   - Go to the **"Settings"** tab.
+   - Scroll down to the **"Notifications"** section.
+   - Confirm that the option **"I want to receive special offers and promotions from Wolt via emails and push-messages"** is turned **ON**.
+
 
 **Expected Results**:
 
@@ -165,6 +171,9 @@
 
 - **Step 14**:  
   The user is redirected to the Wolt homepage, and clicking the user icon successfully displays accessible account options, indicating a successful login.
+
+- **Step 15**:
+   - The **"Notifications"** setting under the **Settings** tab should display the option **"I want to receive special offers and promotions from Wolt via emails and push-messages"** as turned **ON** by default.
 
 **Actual Results**:
 
@@ -273,6 +282,13 @@
 - Verified that the user's initials were displayed in the account section.
 
 **Screenshot**: [Logged In Successfully](../../images/TC-UR-001/TC-UR-001_Logged_In.png)
+
+**Step 15:Verify Notification Settings**:
+- Accessed the **"Profile"** by clicking on the user icon.
+- Navigated to the **"Settings"** tab.
+- Under the **"Notifications"** section, confirmed that the option **"I want to receive special offers and promotions from Wolt via emails and push-messages"** was turned **ON** by default.
+
+**Screenshot**: [Notifications Enabled](../../images/TC-UR-001/TC-UR-001_Notifications_Enabled.png)
 
 
 **Status**:

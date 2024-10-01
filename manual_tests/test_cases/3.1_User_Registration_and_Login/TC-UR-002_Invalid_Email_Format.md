@@ -30,17 +30,16 @@
 
 **Test Steps**:
 
-1. **Navigate to the Wolt Homepage**:
-   - Open a web browser (Chrome or Firefox).
-   - Enter `wolt.com` in the address bar and press Enter.
+1. **Navigate to Wolt Homepage and Open Registration Modal**:
+   - **Reference**: Complete **Steps 1-2** of **[TC-UR-001_Successful_Email_Registration](TC-UR-001_Successful_Email_Registration.md)**.
 
-2. **Open Registration Modal**:
-   - Click on the **"Sign Up"** or **"Log In"** button located at the top right corner of the homepage.
+2. **Attempt Registration with Invalid Email Formats**:
 
-3. **Verify the Registration Modal Appears**:
-   - Confirm that a modal window appears centered on the page.
+   - For each invalid email address in the **Test Data**:
+     - Enter the invalid email address into the "Email" input field.
+     - Click the **"Next"** button.
 
-4. **Attempt Registration with Invalid Email Formats**:
+3. **Verify Error Displayed for Invalid Emails**:
    - For each invalid email address in the **Test Data**:
      - Enter the invalid email address into the "Email" input field.
      - Click the **"Next"** button.
@@ -59,31 +58,27 @@
 
 **Actual Results**:
 
-**Step 1: Navigate to the Wolt Homepage**
+**Step 1: Navigate to Wolt Homepage and Open Registration Modal**
 
+- Followed **Steps 1-2** of **[TC-UR-001](TC-UR-001_Successful_Email_Registration.md)**.
 - The Wolt homepage loaded successfully without any errors.
-- The website's main page displayed as expected.
+- Clicked on the **"Sign Up"** button, and the registration modal appeared.
 
-**Screenshot**: [Wolt Homepage](../../images/TC-UR-002/TC-UR-002_Homepage.png)
+**Step 2: Attempt Registration with Invalid Email Formats**
 
-**Step 2: Open Registration Modal**
+- For each invalid email format in the **Test Data**:
+  - Entered the email into the "Email" input field and clicked the **"Next"** button.
+  
+  - For **plainaddress**, **@test-test.wolt**, **user@**, **user@.wolt**, **.user@wolt.com**, **user..2000@wolt.com**, **user@wolt@wolt.com**, **user@wolt**, **user@wolt..com**, **user@%*.wolt**:
+    - The system displayed an error.
 
-- Clicking the "Sign Up" or "Log In" button successfully opened the registration modal.
+**Screenshot**: [Invalid Email Error](../../images/TC-UR-002/TC-UR-002_Invalid_Email_Error.png)
 
-**Screenshot**: [Wolt Homepage Displaying Registration Modal](../../images/TC-UR-002/TC-UR-002_Signup_Modal.png)
+**Step 3: Verify Error for Invalid Emails**
 
-**Step 3: Verify the Registration Modal Appears**
-
-- The registration modal appeared centered on the page as expected.
-
-**Step 4: Attempt Registration with Invalid Email Formats**
-
-- For each invalid email address tested:
-  - The system displayed an error message "Please enter a valid email." below the email field.
-  - The registration process did not proceed to the next step.
-  - The "Next" button remained ineffective until a valid email was entered.
-
-**Screenshot**: [Error Message Displayed for Invalid Email](../../images/TC-UR-002/TC-UR-002_Invalid_Email_Error.png)
+- An error message **"Please enter a valid email."** was displayed below the email field for all invalid email formats.
+- The registration process did not proceed to the next step.
+- The **"Next"** button remained inactive and ineffective until a valid email was entered.
 
 **Status**:
 

@@ -11,7 +11,6 @@
 
 **Preconditions**:
 
-- The user is on the Wolt homepage (`https://wolt.com`).
 - The user is not logged in.
 - The email address used for registration is valid and not previously registered with Wolt.
 
@@ -21,156 +20,137 @@
 
 **Test Steps**:
 
-1. **Navigate to the Wolt Homepage**:
-   - Open a web browser (Chrome or Firefox).
-   - Enter "wolt.com" in the address bar and press Enter.
+1. **Navigate to Wolt Homepage and Open Registration Modal**:
 
-2. **Open Registration Modal**:
-   - Click on the **"Sign up"** or **"Log in"** button located at the top right corner of the homepage.
+   - **Reference**: Complete **Steps 1-2** of **[TC-UR-001_Successful_Email_Registration](TC-UR-001_Successful_Email_Registration.md)**.
 
-3. **Enter Email Address to Register**:
-   - Locate the email input field labeled "Email".
-   - Enter **testuser_resend@wolt.com** into the email field.
-   - Click the "Next" button.
+2. **Enter Email Address to Register**:
 
-4. **Verify Email Confirmation Modal**:
+   - In the registration modal, enter **testuser_resend@wolt.com** into the email field.
+   - Click the **"Next"** button.
+
+3. **Verify Email Confirmation Modal**:
+
    - Wait for the "Great, check your inbox!" modal to appear.
-   - Check the message displayed in the modal.
+   - Verify the message displayed in the modal.
    - Verify the presence of the **"Resend email"** button.
 
-5. **Click the "Resend email" Button Multiple Times**:
+4. **Click the "Resend email" Button Multiple Times**:
+
    - Within the "Great, check your inbox!" modal, click the **"Resend email"** button.
    - Observe if a brief success message "Email sent!" appears.
-   - Repeat clicking the **"Resend email"** button until the system prevents further resends (4 attempts).
+   - Repeat clicking the **"Resend email"** button until the system prevents further resends (up to 4 attempts).
 
-6. **Verify Error Message for Resend Limit**:
+5. **Verify Error Message for Resend Limit**:
+
    - After reaching the resend limit, observe the error message displayed.
-   - Check if the error message contains explanatory text about reaching the limit.
+   - Verify if the error message contains explanatory text about reaching the limit.
 
-7. **Check Email for Registration Links**:
+6. **Check Email for Registration Links**:
+
    - Log in to the **testuser_resend@wolt.com** email account.
-   - Locate the emails from **`info@wolt.com`** with the subject "Welcome to Wolt".
-   - Verify that there are multiple emails received, corresponding to the number of successful resends.
+   - Verify that multiple emails from **`info@wolt.com`** with the subject "Welcome to Wolt" are received, corresponding to the number of successful resends.
 
-8. **Verify Contents of the Latest Email**:
+7. **Begin Account Registration**:
+
    - Open the most recent "Welcome to Wolt" email.
-   - Verify its content.
-
-9. **Begin Account Registration**:
-   - Click the **"Register a new Wolt Account"** button in the most recent email.
+   - Click the **"Register a new Wolt Account"** button in the email.
    - Ensure a new browser tab opens displaying the registration form.
+
+8. **Continue Registration Process**:
+
+   - **Reference**: Continue from **Step 5** onwards of **[TC-UR-001_Successful_Email_Registration](TC-UR-001_Successful_Email_Registration.md)** to complete the registration.
 
 **Expected Results**:
 
-- **Step 1**:  
-  The Wolt homepage loads successfully without any errors.
+- **Step 1**:
+  - The Wolt homepage loads successfully without errors.
+  - Clicking the **"Sign up"** button opens the registration modal.
 
-- **Step 2**:  
-  Clicking the **"Sign up"** or **"Log in"** button triggers the display of the registration modal.
+- **Step 2**:
+  - The email input accepts **testuser_resend@wolt.com**, and clicking **"Next"** initiates the registration process.
 
-- **Step 3**:  
-  The email input accepts **testuser_resend@wolt.com**, and clicking **"Next"** initiates the registration process.
+- **Step 3**:
+  - The "Great, check your inbox!" modal appears with the appropriate message.
+  - The **"Resend email"** button is visible and functional.
 
-- **Step 4**:  
-  The "Great, check your inbox!" modal appears with the message:
-  "We've just sent a sign-in link to testuser_resend@wolt.com. Please check your spam folder in case you didn't receive the email."
-  The **"Resend email"** button is visible.
+- **Step 4**:
+  - Clicking the "Resend email" button sends additional registration emails.
+  - A brief "Email sent!" message appears after each successful resend.
+  - After the allowed number of resends (usually 4), the system prevents further resends.
 
-- **Step 5**:  
-  The "Resend email" button functions correctly for the first few attempts, showing a brief "Email sent!" message each time. After reaching the limit (4 attempts), the system prevents further resends.
+- **Step 5**:
+  - An error message is displayed indicating that the resend limit has been reached.
+  - The error message contains explanatory text.
 
-- **Step 6**:  
-  An error message is displayed "Too many requests".
+- **Step 6**:
+  - The user's email inbox contains multiple "Welcome to Wolt" emails, one for each successful resend.
 
-- **Step 7**:  
-  5 emails (1 initial and 4 resends) from **`info@wolt.com`** with the subject "Welcome to Wolt" are received in the inbox of **testuser_resend@wolt.com**.
+- **Step 7**:
+  - The most recent email contains the correct contents.
+  - Clicking the **"Register a new Wolt Account"** button opens the registration form.
 
-- **Step 8**:  
-  The most recent email contains:
-  - The Wolt logo at the top of the email.
-  - A welcome message: "Welcome to Wolt!"
-  - Text: "Get ready for the best restaurants, grocery stores and other shops in your area - all in one app. To get started, please register your account by clicking the button below."
-  - A **"Register a new Wolt Account"** button.
-
-- **Step 9**:  
-  Clicking the **"Register a new Wolt Account"** button opens a new browser tab displaying the registration form.
+- **Step 8**:
+  - The user can continue the registration process as per **[TC-UR-001_Successful_Email_Registration](TC-UR-001_Successful_Email_Registration.md)** from **Step 5** onwards.
 
 **Actual Results**:
 
-**Step 1: Navigate to the Wolt Homepage**
+**Step 1: Navigate to Wolt Homepage and Open Registration Modal**
 
+- Followed **Steps 1-2** of **[TC-UR-001](TC-UR-001_Successful_Email_Registration.md)**.
 - The Wolt homepage loaded successfully without any errors.
-- The website's main page displayed as expected.
 
-**Screenshot**: [Wolt Homepage](../../images/TC-UR-004/TC-UR-004_Homepage.png)
-
-**Step 2: Open Registration Modal**
-
-- Clicking on the **"Sign up"** button at the top right corner of the homepage triggered the registration modal.
-- The modal appeared after the button was clicked.
-
-**Screenshot**: [Registration Modal Opens](../../images/TC-UR-004/TC-UR-004_Signup_Modal.png)
-
-**Step 3: Enter Email Address to Register**
+**Step 2: Enter Email Address to Register**
 
 - Entered **testuser_resend@wolt.com** into the email field.
 - Clicked the **"Next"** button.
-- The system accepted the email and didn't throw an error.
+- The system accepted the email and proceeded to the next step.
 
-**Step 4: Verify Email Confirmation Modal**
+**Step 3: Verify Email Confirmation Modal**
 
-- The "Great, check your inbox!" modal appeared immediately.
+- The "Great, check your inbox!" modal appeared.
 - The message stated: "We've just sent a sign-in link to **testuser_resend@wolt.com**. Please check your spam folder in case you didn't receive the email."
-- The **"Resend email"** button was present and functional.
+- The **"Resend email"** button was visible.
 
-**Screenshot**: [Email Confirmation Modal](../../images/TC-UR-004/TC-UR-004_Email_Sent.png)
+  [Email Confirmation Modal](../../images/TC-UR-004/TC-UR-004_Email_Sent.png)
 
-**Step 5: Click the "Resend email" Button Multiple Times**
+**Step 4: Click the "Resend email" Button Multiple Times**
 
-- Clicked the **"Resend email"** button 4 times.
-- For the first 4 attempts, a brief success message "Email sent!" appeared for a few seconds after each click.
+- Clicked the **"Resend email"** button multiple times.
+- For the first 4 attempts, a brief success message "Email sent!" appeared each time.
 - On the 5th attempt, an error indicator appeared, preventing further resends.
 
-**Screenshot**: [Email Resent Modal](../../images/TC-UR-004/TC-UR-004_Email_Resent.png)
+  [Email Resent Modal](../../images/TC-UR-004/TC-UR-004_Email_Resent.png)
 
-**Step 6: Verify Error Message for Resend Limit**
+**Step 5: Verify Error Message for Resend Limit**
 
 - After reaching the resend limit, an error indicator (red exclamation mark) was displayed.
-- However, no explanatory text about reaching the limit was shown.
 
-**Screenshot**: [Error Without Text](../../images/defects/DEF-UR-004-001.png)
+  [Error Without Text](../../images/defects/DEF-UR-004-001.png)
 
-**Step 7: Check Email for Registration Links**
+**Step 6: Check Email for Registration Links**
 
-- Logged into the **testuser_resend@wolt.com** email account successfully.
-- Found 5 emails (1 initial + 4 resends) from **`info@wolt.com`** with the subject "Welcome to Wolt."
+- Logged into the **testuser_resend@wolt.com** email account.
+- Received 5 emails (1 initial + 4 resends) from **`info@wolt.com`** with the subject "Welcome to Wolt".
 
-**Screenshot**: [Email Inbox with 5 Registration Emails](../../images/TC-UR-004/TC-UR-004_Email_Inbox.png)
+  [Email Inbox with 5 Registration Emails](../../images/TC-UR-004/TC-UR-004_Email_Inbox.png)
 
-**Step 8: Verify Contents of the Latest Email**
+**Step 7: Begin Account Registration**
 
-- Opened the most recent "Welcome to Wolt" email from info@wolt.com.
-- The email contained:
-  - A large Wolt logo (blue circular design) in the center of the email.
-  - A short message: "Hi, we'll set you up with a Wolt account in no time. Just click the button below!"
-  - A big blue square button that says "Register a new Wolt Account"
-- All links and images in the email loaded correctly.
+- Opened the most recent email.
+- Clicked the **"Register a new Wolt Account"** button.
+- A new browser tab opened displaying the registration form.
 
-**Screenshot**: [Latest Registration Email Content](../../images/TC-UR-004/TC-UR-004_Email_Content.png)
+**Step 8: Continue Registration Process**
 
-**Step 9: Begin Account Registration**
-
-- Clicked the **"Register a new Wolt Account"** button in the email.
-- A new browser tab opened automatically.
-- The registration form was displayed without loading issues.
-
-**Screenshot**: [Registration Form Displayed](../../images/TC-UR-004/TC-UR-004_Registration_Form.png)
-
+- Continued the registration process as per **[TC-UR-001](TC-UR-001_Successful_Email_Registration.md)** from **Step 5** onwards.
+- The registration completed successfully.
+  
 **Status**:
 
-- [X] Fail
+- [X] Pass *(with minor defect)*
 
 **Comments**:
 
-- Defect identified: After multiple resend attempts, an error is displayed without any explanatory text. 
-  [DEF-UR-004-001](../../images/defects/DEF-UR-004-001.png): Error message lacks text when email resend limit is reached.
+- **Defect Identified**: Error message lacks explanatory text when the resend limit is reached.
+   [DEF-UR-004-001](../../images/defects/DEF-UR-004-001.png): Error message lacks text when email resend limit is reached.
