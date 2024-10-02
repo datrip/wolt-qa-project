@@ -40,6 +40,24 @@ export class Login {
         await expect(facebookButton).toBeVisible();
     }
 
+    // Click on "Continue with Google"
+    async clickGoogle(){
+        const googleButton = this.page.getByTestId('MethodSelect.Google');
+        await googleButton.click();
+    }
+
+    // Click on "Continue with Apple"
+    async clickApple(){
+        const appleButton = this.page.getByTestId('MethodSelect.Apple');
+        await appleButton.click();
+    }
+
+    // Click on "Continue with Google"
+    async clickFacebook(){
+        const facebookButton = this.page.getByTestId('MethodSelect.Facebook');
+        await facebookButton.click();
+    }
+
     // Email submit
     async submitEmail() {
         const email = this.isRegistered 
