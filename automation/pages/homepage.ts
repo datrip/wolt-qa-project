@@ -4,12 +4,12 @@ export class HomePage {
   readonly page: Page;
 
   userMenu;
-  userMenu_Profile;
+  userMenu_Logout;
   constructor(page: Page) {
     this.page = page;
 
-    this.userMenu = this.page.getByTestId("UserStatus.ProfileImage");
-    this.userMenu_Profile = this.page.getByTestId("UserMenuItem.Profile");
+    this.userMenu = this.page.getByTestId("UserStatusDropdown");
+    this.userMenu_Logout = this.page.getByTestId("UserMenu.Logout");
   }
 
   // Navigate to the homepage and verify the title
@@ -41,7 +41,8 @@ export class HomePage {
 
   async verifyLoggedIn(){
     await expect(this.userMenu).toBeVisible();
-    await expect(this.userMenu_Profile).toBeVisible();
+    this.userMenu.click();
+    await expect(this.userMenu_Logout).toBeVisible();
 
   }
 }

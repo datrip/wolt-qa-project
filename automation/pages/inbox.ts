@@ -60,8 +60,13 @@ export class Inbox {
     }
 
     // Open the login link from the email
-    async openLoginLink() {
-        await this.loginLink.click();
+    async openLoginLink(): Promise<Page> {
+        const [newPage] = await Promise.all([
+            this.page.waitForEvent('popup'),
+            this.loginLink.click()
+        ]);
+        await newPage.waitForLoadState();
+        return newPage;
     }
 
     // Verify the login email content

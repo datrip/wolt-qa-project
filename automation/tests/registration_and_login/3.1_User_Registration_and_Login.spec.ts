@@ -95,11 +95,12 @@ test.describe('User Registration and Login', () => {
     // Verify Login email contents
     await inbox.verifyLoginEmail();
 
-    // Verify Login email link
-    await inbox.openLoginLink();
-
+    // Open login email link (opens a popup)
+    const newPage = await inbox.openLoginLink();
+    const homePageAfterLogin = new HomePage(newPage);
+    
     // Verify account menu displayed on top right of the page
-    await homePage.verifyLoggedIn();
+    await homePageAfterLogin.verifyLoggedIn();
 
   });
 
@@ -186,7 +187,7 @@ test.describe('User Registration and Login', () => {
     login.clickApple(),  
   ]);
 
-    // Sign-in using Gmail credentials [Disabled due to Apple's bot auto detection]
+    // Sign-in using Apple credentials [Disabled due to Apple's bot auto detection]
     //await apple.signIn(applePopup);
 
     // Input user's information
@@ -224,4 +225,131 @@ test.describe('User Registration and Login', () => {
   
   });
   
+  test('TC-UR-008: Successful Email Login', async ({ page }) => {
+    const homePage = new HomePage(page);
+    const login = new Login(page, true);
+    const inbox = new Inbox(page, true);
+
+    // Navigate to Wolt homepage
+    await homePage.navigate();
+
+    // Close cookies popup if visible
+    await homePage.closePopup();
+
+    // Open registration modal
+    await homePage.openRegistrationModal();
+
+    // Verify the registration modal titles
+    await login.validateTitles();
+
+    // Proceed with email registration
+    await login.submitEmail();
+
+    // Navigate to Inbox homepage
+    await inbox.navigateToInbox();
+
+    // Open email inbox
+    await inbox.loginInbox();
+
+    // Verify Login email contents
+    await inbox.verifyLoginEmail();
+
+    // Open login email link (opens a popup)
+    const newPage = await inbox.openLoginLink();
+    const homePageAfterLogin = new HomePage(newPage);
+    
+    // Verify account menu displayed on top right of the page
+    await homePageAfterLogin.verifyLoggedIn();
+
+  });
+
+  test('TC-UR-009: Successful Google Login', async ({ page }) => {
+    const homePage = new HomePage(page);
+    const login = new Login(page, false); 
+    const google = new Google(page);
+
+    // Navigate to Wolt homepage
+    await homePage.navigate();
+
+    // Close cookies popup if visible
+    await homePage.closePopup();
+
+    // Open registration modal
+    await homePage.openRegistrationModal();
+
+    // Verify that third-party buttons are visible
+    await login.validateThirdParty();
+
+    // Click "Continue with Google"
+    await login.clickGoogle();
+
+    // Sign-in using Gmail credentials [Disabled due to Google's bot auto detection]
+    // await google.signIn();
+
+    // Verify account menu displayed on top right of the page
+    // await homePageAfterLogin.verifyLoggedIn();
+
+  });
+
+  test('TC-UR-010: Successful Apple Login', async ({ page, context}) => {
+    const homePage = new HomePage(page);
+    const login = new Login(page, false); 
+    const apple = new Apple(page);
+
+    // Navigate to Wolt homepage
+    await homePage.navigate();
+
+    // Close cookies popup if visible
+    await homePage.closePopup();
+
+    // Open registration modal
+    await homePage.openRegistrationModal();
+
+    // Verify that third-party buttons are visible
+    await login.validateThirdParty();
+
+   // Click "Continue with Apple" and capture the popup window
+   const [applePopup] = await Promise.all([
+    context.waitForEvent('page'),
+    login.clickApple(),  
+  ]);
+
+    // Sign-in using Apple credentials [Disabled due to Apple's bot auto detection]
+    //await apple.signIn(applePopup);
+
+    // Verify account menu displayed on top right of the page
+    // await homePageAfterLogin.verifyLoggedIn();
+
+  });
+
+  test('TC-UR-0011: Successful Facebook Login', async ({ page, context }) => {
+    const homePage = new HomePage(page);
+    const login = new Login(page, false);
+    const facebook = new Facebook(page);
+  
+    // Navigate to your application's homepage
+    await homePage.navigate();
+  
+    // Close any popups if present
+    await homePage.closePopup();
+  
+    // Open registration modal
+    await homePage.openRegistrationModal();
+  
+    // Verify that third-party buttons are visible
+    await login.validateThirdParty();
+  
+    // Click "Continue with Facebook" and capture the popup window
+    const [facebookPopup] = await Promise.all([
+      context.waitForEvent('page'),
+      login.clickFacebook(),  
+    ]);
+  
+    // Sign-in using Facebook credentials in the popup [Disabled due to Facebook's bot auto detection]
+    // await facebook.signIn(facebookPopup);
+
+    // Verify account menu displayed on top right of the page
+    // await homePageAfterLogin.verifyLoggedIn();
+  
+  });
 });
