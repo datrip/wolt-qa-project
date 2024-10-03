@@ -103,7 +103,7 @@
 - The message stated: "We've just sent a sign-in link to **existinguser@wolt.com**. Please check your spam folder in case you didn't receive the email."
 - The **"Resend email"** button was visible.
 
-**Screenshot**: [Email Confirmation Modal](../../images/TC-UR-003/TC-UR-003_Email_Sent.png)
+**Screenshot**: [Email Confirmation Modal](../../images/TC-UR/TC-UR-003/TC-UR-003_Email_Sent.png)
 
 
 **Step 4: Check for Sign-In Email**
@@ -115,7 +115,7 @@
   - Greeting message: "Hello! You can sign in to Wolt by clicking the button below. Enjoy Wolt!"
   - A **"Log in"** button.
 
-**Screenshot**: [Log In Email](../../images/TC-UR-003/TC-UR-003_Login_Email.png)
+**Screenshot**: [Log In Email](../../images/TC-UR/TC-UR-003/TC-UR-003_Login_Email.png)
 
 
 **Step 5: Log In Using the Email Link**
@@ -131,7 +131,7 @@
 - User's initials or profile icon appeared at the top right corner.
 - Clicked on the user icon and confirmed that account options were accessible.
 
-**Screenshot**: [Logged In Successfully](../../images/TC-UR-003/TC-UR-003_Homepage.png)
+**Screenshot**: [Logged In Successfully](../../images/TC-UR/TC-UR-003/TC-UR-003_Homepage.png)
 
 
 **Status**:

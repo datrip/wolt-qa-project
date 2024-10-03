@@ -103,7 +103,7 @@
 - Received an email from **`info@wolt.com`** with the subject **"Log In to Wolt"**.
 - The email contained the correct message and **"Sign in"** button.
 
-**Screenshot**: [Login Email Content](../../images/TC-UR-008/TC-UR-008_Email_Content.png)
+**Screenshot**: [Login Email Content](../../images/TC-UR/TC-UR-008/TC-UR-008_Email_Content.png)
 
 **Step 5: Log In via Email Link**
 
@@ -116,7 +116,7 @@
 - The user's initials appeared in the top right corner, confirming that the user was logged in.
 - Account options were accessible from the user icon.
 
-**Screenshot**: [User Logged In](../../images/TC-UR-008/TC-UR-008_Logged_In.png)
+**Screenshot**: [User Logged In](../../images/TC-UR/TC-UR-008/TC-UR-008_Logged_In.png)
 
 **Status**:
 

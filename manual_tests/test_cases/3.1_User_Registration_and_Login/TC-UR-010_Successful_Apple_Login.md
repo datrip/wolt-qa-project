@@ -77,7 +77,7 @@
 - Located and clicked on the **"Continue with Apple"** button in the login modal.
 - The Apple sign-in popup window opened.
 
-**Screenshot**: [Apple Sign-In Button](../../images/TC-UR-010/TC-UR-010_Apple_Signin_Button.png)
+**Screenshot**: [Apple Sign-In Button](../../images/TC-UR/TC-UR-010/TC-UR-010_Apple_Signin_Button.png)
 
 **Step 3: Apple Authentication**
 
@@ -92,7 +92,7 @@
 - The Apple authentication process completed successfully.
 - Redirected back to the Wolt homepage.
 
-**Screenshot**: [Apple Sign-In Process](../../images/TC-UR-010/TC-UR-010_Apple_Signin_Process.png)
+**Screenshot**: [Apple Sign-In Process](../../images/TC-UR/TC-UR-010/TC-UR-010_Apple_Signin_Process.png)
 
 **Step 4: Verify Successful Login**
 
@@ -100,7 +100,7 @@
 - User's initials appeared at the top right corner of the homepage.
 - Clicked on the user icon and confirmed that account options (e.g., Profile, Settings, Logout) were accessible.
 
-**Screenshot**: [Logged In Successfully](../../images/TC-UR-010/TC-UR-010_Logged_In.png)
+**Screenshot**: [Logged In Successfully](../../images/TC-UR/TC-UR-010/TC-UR-010_Logged_In.png)
 
 **Status**:
 

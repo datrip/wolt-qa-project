@@ -82,7 +82,7 @@
 - Located and clicked on the **"Continue with Google"** button in the registration modal.
 - The Google sign-in window opened.
 
-**Screenshot**: [Google Sign-In Button](../../images/TC-UR-005/TC-UR-005_Google_Signin_Button.png)
+**Screenshot**: [Google Sign-In Button](../../images/TC-UR/TC-UR-005/TC-UR-005_Google_Signin_Button.png)
 
 **Step 3: Google Authentication**
 
@@ -93,7 +93,7 @@
 - Clicked **"Next"**.
 - Redirected back to the Wolt website.
 
-**Screenshot**: [Google Sign-In Process](../../images/TC-UR-005/TC-UR-005_Google_Signin_Page.png)
+**Screenshot**: [Google Sign-In Process](../../images/TC-UR/TC-UR-005/TC-UR-005_Google_Signin_Page.png)
 
 **Step 4: Continue Registration Process**
 

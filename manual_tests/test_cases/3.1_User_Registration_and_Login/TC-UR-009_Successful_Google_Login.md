@@ -74,7 +74,7 @@
 - Located and clicked on the **"Continue with Google"** button in the login modal.
 - Redirected to the Google sign-in page.
 
-**Screenshot**: [Google Sign-In Button](../../images/TC-UR-009/TC-UR-009_Google_Signin_Button.png)
+**Screenshot**: [Google Sign-In Button](../../images/TC-UR/TC-UR-009/TC-UR-009_Google_Signin_Button.png)
 
 **Step 3: Google Authentication**
 
@@ -87,7 +87,7 @@
 - If prompted, accepted any terms and permissions requested by Wolt.
 - Redirected back to the Wolt homepage.
 
-**Screenshot**: [Google Sign-In Form](../../images/TC-UR-009/TC-UR-009_Google_Signin_Page.png)
+**Screenshot**: [Google Sign-In Form](../../images/TC-UR/TC-UR-009/TC-UR-009_Google_Signin_Page.png)
 
 **Step 4: Verify Successful Login**
 
@@ -95,7 +95,7 @@
 - User's initials appeared at the top right corner of the homepage.
 - Clicked on the user icon and confirmed that account options were accessible.
 
-**Screenshot**: [Logged In Successfully](../../images/TC-UR-009/TC-UR-009_Logged_In.png)
+**Screenshot**: [Logged In Successfully](../../images/TC-UR/TC-UR-009/TC-UR-009_Logged_In.png)
 
 **Status**:
 

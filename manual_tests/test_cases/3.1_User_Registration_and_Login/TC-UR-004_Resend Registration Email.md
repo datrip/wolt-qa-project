@@ -112,7 +112,7 @@
 - The message stated: "We've just sent a sign-in link to **testuser_resend@wolt.com**. Please check your spam folder in case you didn't receive the email."
 - The **"Resend email"** button was visible.
 
-  [Email Confirmation Modal](../../images/TC-UR-004/TC-UR-004_Email_Sent.png)
+  [Email Confirmation Modal](../../images/TC-UR/TC-UR-004/TC-UR-004_Email_Sent.png)
 
 **Step 4: Click the "Resend email" Button Multiple Times**
 
@@ -120,20 +120,20 @@
 - For the first 4 attempts, a brief success message "Email sent!" appeared each time.
 - On the 5th attempt, an error indicator appeared, preventing further resends.
 
-  [Email Resent Modal](../../images/TC-UR-004/TC-UR-004_Email_Resent.png)
+  [Email Resent Modal](../../images/TC-UR/TC-UR-004/TC-UR-004_Email_Resent.png)
 
 **Step 5: Verify Error Message for Resend Limit**
 
 - After reaching the resend limit, an error indicator (red exclamation mark) was displayed.
 
-  [Error Without Text](../../images/defects/DEF-UR-004-001.png)
+  [Error Without Text](../../images/TC-UR/defects/DEF-UR-004-001.png)
 
 **Step 6: Check Email for Registration Links**
 
 - Logged into the **testuser_resend@wolt.com** email account.
 - Received 5 emails (1 initial + 4 resends) from **`info@wolt.com`** with the subject "Welcome to Wolt".
 
-  [Email Inbox with 5 Registration Emails](../../images/TC-UR-004/TC-UR-004_Email_Inbox.png)
+  [Email Inbox with 5 Registration Emails](../../images/TC-UR/TC-UR-004/TC-UR-004_Email_Inbox.png)
 
 **Step 7: Begin Account Registration**
 
@@ -153,4 +153,4 @@
 **Comments**:
 
 - **Defect Identified**: Error message lacks explanatory text when the resend limit is reached.
-   [DEF-UR-004-001](../../images/defects/DEF-UR-004-001.png): Error message lacks text when email resend limit is reached.
+   [DEF-UR-004-001](../../images/TC-UR/defects/DEF-UR-004-001.png): Error message lacks text when email resend limit is reached.

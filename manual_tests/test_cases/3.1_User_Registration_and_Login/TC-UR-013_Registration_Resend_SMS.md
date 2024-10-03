@@ -107,7 +107,7 @@
 - The modal closed, returning to the **"Enter your code"** screen.
 - Received a notification indicating a new code has been sent.
 
-**Screenshot**: [I didn't get a code - Help Menu](../../images/TC-UR-013/TC-UR-013_Help_Menu.png)
+**Screenshot**: [I didn't get a code - Help Menu](../../images/TC-UR/TC-UR-013/TC-UR-013_Help_Menu.png)
 
 **Step 4: Verify Additional SMS is Received**
 

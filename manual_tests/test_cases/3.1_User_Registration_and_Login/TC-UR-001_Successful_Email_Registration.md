@@ -182,14 +182,14 @@
 - The Wolt homepage loaded successfully without any errors.
 - The website's main page displayed as expected.
 
-**Screenshot**: [Wolt Homepage](../../images/TC-UR-001/TC-UR-001_Homepage.png)
+**Screenshot**: [Wolt Homepage](../../images/TC-UR/TC-UR-001/TC-UR-001_Homepage.png)
 
 **Step 2: Open Registration Modal**
 
 - Clicking on the **"Sign up"** button at the top right corner of the homepage triggered the registration modal.
 - The modal appeared after the button was clicked.
 
-**Screenshot**: [Registration Modal Opens](../../images/TC-UR-001/TC-UR-001_Signup_Modal.png)
+**Screenshot**: [Registration Modal Opens](../../images/TC-UR/TC-UR-001/TC-UR-001_Signup_Modal.png)
 
 **Step 3: Verify the Registration Modal Appears**
 
@@ -212,7 +212,7 @@
 - The message stated: "We've just sent a sign-in link to **testuser@wolt.com**. Please check your spam folder in case you didn't receive the email."
 - The **"Resend email"** button was present and functional.
 
-**Screenshot**: [Email Confirmation Modal](../../images/TC-UR-001/TC-UR-001_Email_Sent.png)
+**Screenshot**: [Email Confirmation Modal](../../images/TC-UR/TC-UR-001/TC-UR-001_Email_Sent.png)
 
 **Step 7: Check Email for Registration Link**
 
@@ -221,7 +221,7 @@
 - The email contained the Wolt logo, welcome message, and **"Register a new Wolt Account"** button.
 - All links and images in the email loaded correctly.
 
-**Screenshot**: [Registration Email Content](../../images/TC-UR-001/TC-UR-001_Email_Content.png)
+**Screenshot**: [Registration Email Content](../../images/TC-UR/TC-UR-001/TC-UR-001_Email_Content.png)
 
 **Step 8: Begin Account Registration**
 
@@ -229,7 +229,7 @@
 - A new browser tab opened automatically.
 - The registration form was displayed without loading issues.
 
-**Screenshot**: [Registration Form Displayed](../../images/TC-UR-001/TC-UR-001_Registration_Form.png)
+**Screenshot**: [Registration Form Displayed](../../images/TC-UR/TC-UR-001/TC-UR-001_Registration_Form.png)
 
 **Step 9: Verify Registration Form Elements**
 
@@ -256,7 +256,7 @@
 - Chose to keep the toggle **ON**.
 - Clicked **"Save"** to proceed.
 
-**Screenshot**: [Notification Preferences Modal](../../images/TC-UR-001/TC-UR-001_Registration_Promotion_Yes.png)
+**Screenshot**: [Notification Preferences Modal](../../images/TC-UR/TC-UR-001/TC-UR-001_Registration_Promotion_Yes.png)
 
 **Step 12: Enter Verification Code**
 
@@ -265,7 +265,7 @@
 - Entered the verification code into the input fields.
 - The system accepted the code and proceeded without errors.
 
-**Screenshot**: [Phone Verification Modal](../../images/TC-UR-001/TC-UR-001_Registration_SMS_Verify.png)
+**Screenshot**: [Phone Verification Modal](../../images/TC-UR/TC-UR-001/TC-UR-001_Registration_SMS_Verify.png)
 
 **Step 13: Complete Registration**
 
@@ -273,7 +273,7 @@
 - The message appeared as an overlay on the modal.
 - The modal closed automatically after the success message.
 
-**Screenshot**: [Phone Number Verified Message](../../images/TC-UR-001/TC-UR-001_Registration_SMS_Verify_Confirmed.png)
+**Screenshot**: [Phone Number Verified Message](../../images/TC-UR/TC-UR-001/TC-UR-001_Registration_SMS_Verify_Confirmed.png)
 
 **Step 14: Verify Successful Login**
 
@@ -281,14 +281,14 @@
 - Clicked on the user icon located at the top right corner.
 - Verified that the user's initials were displayed in the account section.
 
-**Screenshot**: [Logged In Successfully](../../images/TC-UR-001/TC-UR-001_Logged_In.png)
+**Screenshot**: [Logged In Successfully](../../images/TC-UR/TC-UR-001/TC-UR-001_Logged_In.png)
 
 **Step 15:Verify Notification Settings**:
 - Accessed the **"Profile"** by clicking on the user icon.
 - Navigated to the **"Settings"** tab.
 - Under the **"Notifications"** section, confirmed that the option **"I want to receive special offers and promotions from Wolt via emails and push-messages"** was turned **ON** by default.
 
-**Screenshot**: [Notifications Enabled](../../images/TC-UR-001/TC-UR-001_Notifications_Enabled.png)
+**Screenshot**: [Notifications Enabled](../../images/TC-UR/TC-UR-001/TC-UR-001_Notifications_Enabled.png)
 
 
 **Status**:

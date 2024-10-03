@@ -74,7 +74,7 @@
 - Located and clicked on the **"Continue with Facebook"** button in the registration modal.
 - Redirected to the Facebook login page.
 
-**Screenshot**: [Facebook Sign-In Button](../../images/TC-UR-007/TC-UR-007_Facebook_Signin_Button.png)
+**Screenshot**: [Facebook Sign-In Button](../../images/TC-UR/TC-UR-007/TC-UR-007_Facebook_Signin_Button.png)
 
 **Step 3: Facebook Authentication**
 
@@ -85,7 +85,7 @@
 - If prompted, clicked **"Continue as [Your Name]"** to authorize the Wolt app.
 - Redirected back to the Wolt website.
 
-**Screenshot**: [Facebook Login Page](../../images/TC-UR-007/TC-UR-007_Facebook_Login_Page.png)
+**Screenshot**: [Facebook Login Page](../../images/TC-UR/TC-UR-007/TC-UR-007_Facebook_Login_Page.png)
 
 **Step 4: Continue Registration Process**
 
@@ -104,4 +104,4 @@
 **Comments**:
 
 - Defect identified: Closing the Facebook sign-in popup results in an empty error message being displayed.
-  [DEF-UR-007-001](../../images/defects/DEF-UR-007-001.png): Error message appears without any explanatory text when Facebook login popup is closed and "Continue with Facebook" button shows a perpetual spinning icon.
+  [DEF-UR-007-001](../../images/TC-UR/defects/DEF-UR-007-001.png): Error message appears without any explanatory text when Facebook login popup is closed and "Continue with Facebook" button shows a perpetual spinning icon.

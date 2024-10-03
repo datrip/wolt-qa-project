@@ -73,7 +73,7 @@
 - Located and clicked on the **"Continue with Facebook"** button in the login modal.
 - Redirected to the Facebook login page.
 
-**Screenshot**: [Facebook Sign-In Button](../../images/TC-UR-011/TC-UR-011_Facebook_Signin_Button.png)
+**Screenshot**: [Facebook Sign-In Button](../../images/TC-UR/TC-UR-011/TC-UR-011_Facebook_Signin_Button.png)
 
 **Step 3: Facebook Authentication**
 
@@ -85,7 +85,7 @@
 - If prompted, clicked **"Continue as [Your Name]"** to authorize the Wolt app.
 - Redirected back to the Wolt homepage.
 
-**Screenshot**: [Facebook Login Page](../../images/TC-UR-011/TC-UR-011_Facebook_Login_Page.png)
+**Screenshot**: [Facebook Login Page](../../images/TC-UR/TC-UR-011/TC-UR-011_Facebook_Login_Page.png)
 
 **Step 4: Verify Successful Login**
 
@@ -93,7 +93,7 @@
 - User's initials appeared at the top right corner of the homepage.
 - Clicked on the user icon and confirmed that account options (e.g., Profile, Settings, Logout) were accessible.
 
-**Screenshot**: [Logged In Successfully](../../images/TC-UR-011/TC-UR-011_Logged_In.png)
+**Screenshot**: [Logged In Successfully](../../images/TC-UR/TC-UR-011/TC-UR-011_Logged_In.png)
 
 **Status**:
 

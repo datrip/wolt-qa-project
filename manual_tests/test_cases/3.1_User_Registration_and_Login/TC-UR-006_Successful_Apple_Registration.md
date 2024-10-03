@@ -84,7 +84,7 @@
 - Located and clicked on the **"Continue with Apple"** button in the registration modal.
 - The Apple sign-in window opened.
 
-**Screenshot**: [Apple Sign-In Button](../../images/TC-UR-006/TC-UR-006_Apple_Signin_Button.png)
+**Screenshot**: [Apple Sign-In Button](../../images/TC-UR/TC-UR-006/TC-UR-006_Apple_Signin_Button.png)
 
 **Step 3: Apple Authentication**
 
@@ -97,7 +97,7 @@
 - On the confirmation page, clicked **"Continue"** to authorize Wolt.
 - Redirected back to the Wolt website.
 
-**Screenshot**: [Apple Sign-In Process](../../images/TC-UR-006/TC-UR-006_Apple_Signin_Process.png)
+**Screenshot**: [Apple Sign-In Process](../../images/TC-UR/TC-UR-006/TC-UR-006_Apple_Signin_Process.png)
 
 **Step 4: Continue Registration Process**
 

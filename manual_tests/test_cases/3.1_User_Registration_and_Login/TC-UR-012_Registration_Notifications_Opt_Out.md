@@ -78,7 +78,7 @@
   - The toggle visually changed to indicate it's disabled.
 - Clicked **"Save"** to proceed.
 
-**Screenshot**: [Opt-Out of Notifications](../../images/TC-UR-012/TC-UR-012_Notifications_Toggle_Off.png)
+**Screenshot**: [Opt-Out of Notifications](../../images/TC-UR/TC-UR-012/TC-UR-012_Notifications_Toggle_Off.png)
 
 **Step 3: Complete Registration**
 
@@ -96,7 +96,7 @@
 - Scrolled down to the **"Notifications"** section.
 - Confirmed that **"I want to receive special offers and promotions from Wolt via emails and push-messages"** was turned **OFF**, matching the selection made during registration.
 
-**Screenshot**: [Notifications Disabled in Settings](../../images/TC-UR-012/TC-UR-012_Notifications_Disabled.png)
+**Screenshot**: [Notifications Disabled in Settings](../../images/TC-UR/TC-UR-012/TC-UR-012_Notifications_Disabled.png)
 
 **Status**:
 

@@ -72,7 +72,7 @@
   - For **plainaddress**, **@test-test.wolt**, **user@**, **user@.wolt**, **.user@wolt.com**, **user..2000@wolt.com**, **user@wolt@wolt.com**, **user@wolt**, **user@wolt..com**, **user@%*.wolt**:
     - The system displayed an error.
 
-**Screenshot**: [Invalid Email Error](../../images/TC-UR-002/TC-UR-002_Invalid_Email_Error.png)
+**Screenshot**: [Invalid Email Error](../../images/TC-UR/TC-UR-002/TC-UR-002_Invalid_Email_Error.png)
 
 **Step 3: Verify Error for Invalid Emails**
 
