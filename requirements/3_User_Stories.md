@@ -12,7 +12,7 @@
 ### 3.2 Restaurant Search and Filtering
 
 - As a user, I want to search for restaurants using keywords so that I can find specific cuisines or dishes.
-- As a user, I want to filter search results by venue type (All, Restaurant, Grocery, Alcohol) so that I can narrow down my options.
+- As a user, I want to filter search results by venue type so that I can narrow down my options.
 - As a user, I want to sort search results by different criteria so that I can find the best option for my needs.
 - As a user, I want to filter results to show only venues that are currently delivering so that I can see immediate options.
 - As a Wolt+ member, I want to filter results to show only Wolt+ venues so that I can take advantage of my membership benefits.
