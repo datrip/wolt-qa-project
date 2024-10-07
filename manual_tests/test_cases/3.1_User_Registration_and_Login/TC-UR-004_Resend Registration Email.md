@@ -126,7 +126,7 @@
 
 - After reaching the resend limit, an error indicator (red exclamation mark) was displayed.
 
-  [Error Without Text](../../images/TC-UR/defects/DEF-UR-004-001.png)
+  [Error Without Text](../../images/defects/DEF-UR-004-001.png)
 
 **Step 6: Check Email for Registration Links**
 
@@ -153,4 +153,4 @@
 **Comments**:
 
 - **Defect Identified**: Error message lacks explanatory text when the resend limit is reached.
-   [DEF-UR-004-001](../../images/TC-UR/defects/DEF-UR-004-001.png): Error message lacks text when email resend limit is reached.
+   [DEF-UR-004-001](../../images/defects/DEF-UR-004-001.png): Error message lacks text when email resend limit is reached.
