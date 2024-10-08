@@ -82,7 +82,7 @@
 **Expected Results**:
 
 - **Step 1**:
-  - User is successfully logged in, with their name or initials displayed.
+  - User is successfully logged in, with their initials displayed on the top right corner.
 
 - **Step 2**:
   - Relevant search results for **"ramen"** appear below the search bar.
@@ -135,41 +135,41 @@
   - **"All results"** was selected by default.
   - Venues of various types related to **"ramen"** were displayed.
 
-    **Screenshot**: [Venue - All Results](../../images/TC-RS/TC-RS-003/TC-RS-003_Venue_All_Results.png)
+  **Screenshot**: [Venue - All Results](../../images/TC-RS/TC-RS-003/TC-RS-003_Venue_All_Results.png)
 
 - **Step 6**:
   - Selecting **"Restaurant"** displayed only restaurant venues.
   - Venues such as "Manami" were shown.
   - No other venue types were displayed.
 
-    **Screenshot**: [Venue - Restaurant Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Restaurant_Filter.png)
+  **Screenshot**: [Venue - Restaurant Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Restaurant_Filter.png)
 
 - **Step 7**:
   - Selecting **"Grocery"** displayed grocery stores like "Youmame".
   - Only grocery venues were shown.
 
-    **Screenshot**: [Venue - Grocery Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Grocery_Filter.png)
+  **Screenshot**: [Venue - Grocery Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Grocery_Filter.png)
 
 - **Step 8**:
   - Selecting **"Alcohol"**:
     - Venue called **"Alynas"** was found
     - **"Alynas"** has a listing for cup ramen therefore it fits.
 
-    **Screenshot**: [Venue - Alcohol Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Alcohol_Filter.png)
+  **Screenshot**: [Venue - Alcohol Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Alcohol_Filter.png)
 
 - **Step 8**:
   - Selecting **"Home & DIY"**:
     - Venue called **"iittala"** was found
     - **"iittala"** has a listing for ramen bowls therefore it fits.
 
-    **Screenshot**: [Venue - Home & DIY Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Home_DIY_Filter.png)
+  **Screenshot**: [Venue - Home & DIY Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_Home_DIY_Filter.png)
 
 - **Step 10**:
   - Selecting **"General Merchandise"**:
     - Venue called **"Gera Dovana""** was found
     - **"Gera Dovana"** has a listing for "ramen meal coupon" therefore it fits.
 
-    **Screenshot**: [Venue - General Merchandise Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_General_Merchandise_Filter.png)
+  **Screenshot**: [Venue - General Merchandise Filter](../../images/TC-RS/TC-RS-004/TC-RS-004_Venue_General_Merchandise_Filter.png)
 
 - **Step 11**:
   - Repeating the steps under **"Food and products"**:
