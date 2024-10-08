@@ -55,7 +55,7 @@
   - The auto-suggested results included relevant restaurants such as "Kefyro Ūsai" and products like "Ramen makaronai SANTA MARIA, 200g".
   - No irrelevant suggestions were displayed.
 
-  **Screenshot**: [Auto-Suggested Results](../../images/TC-RS/TS-RS-001/TC-RS-001_Auto_Suggested_Results.png)
+  **Screenshot**: [Auto-Suggested Results](../../images/TC-RS/TC-RS-001/TC-RS-001_Auto_Suggested_Results.png)
 
 **Status**:
 
