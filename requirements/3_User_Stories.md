@@ -15,10 +15,10 @@
 - As a user, I want to filter search results by venue type so that I can narrow down my options.
 - As a user, I want to sort search results by different criteria so that I can find the best option for my needs.
 - As a user, I want to filter results to show only venues that are currently delivering so that I can see immediate options.
+- As a user, I want to filter search results by categories so that I can narrow down the options based on my tastes.
 - As a Wolt+ member, I want to filter results to show only Wolt+ venues so that I can take advantage of my membership benefits.
 - As a user, I want to see key information about each venue in the search results so that I can make quick decisions.
 - As a user, I want to easily access detailed information about a venue from the search results so that I can learn more before making a selection.
-- As a user, I want the search and filter interface to be responsive and update results in real-time so that I can efficiently find what I'm looking for.
 
 ### 3.3 Menu Browsing and Item Selection
 
