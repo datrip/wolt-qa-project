@@ -182,4 +182,7 @@
 **Comments**:
 
 - **Defect Identified**: After applying a venue type filter and refreshing the page, the filter menu only displays "All results" and the previously selected filter option. All other filter options are missing.
-   [DEF-RS-004-001](../../images/defects/DEF-RS-004-001.png): Filter options not persistent after page refresh
+   [DEF-RS-004-001](../../images/defects/DEF-RS-004-001.docx): Filter options not persistent after page refresh
+
+- **Defect Identified**: After applying the "All results" filter, venues in the "Home & DIY" category are not displayed in the search results.
+   [DEF-RS-004-002](../../images/defects/DEF-RS-004-002.docx): "Home & DIY" venues missing from "All results" filter
