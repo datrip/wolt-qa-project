@@ -59,15 +59,22 @@ export class Inbox {
         await this.registerLink.click();
     }
 
-    // Open the login link from the email
-    async openLoginLink(): Promise<Page> {
-        const [newPage] = await Promise.all([
-            this.page.waitForEvent('popup'),
-            this.loginLink.click()
-        ]);
-        await newPage.waitForLoadState();
-        return newPage;
-    }
+    async openLoginLink(): Promise<void> {
+        // Wait for the login email to arrive and the link to be visible
+        await this.page.waitForSelector('a[href*="magic_login"]');
+      
+        // Extract the 'href' attribute of the login link
+        const loginLink = await this.page.getAttribute('a[href*="magic_login"]', 'href');
+        if (!loginLink) {
+          throw new Error('Login link not found');
+        }
+      
+        // Navigate to the login link in the same page
+        await this.page.goto(loginLink);
+      
+        // Wait for the page to load fully
+        await this.page.waitForLoadState('domcontentloaded');
+      }
 
     // Verify the login email content
     async verifyLoginEmail() {

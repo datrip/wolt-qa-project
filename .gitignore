@@ -22,3 +22,6 @@ package-lock.json
 
 # Env file
 .env
+
+# Playwright auth
+automation/playwright/.auth/

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { HomePage } from '../../pages/homepage';
 import { Login } from '../../pages/login';
 import { Inbox } from '../../pages/inbox';
@@ -96,8 +96,8 @@ test.describe('User Registration and Login', () => {
     await inbox.verifyLoginEmail();
 
     // Open login email link (opens a popup)
-    const newPage = await inbox.openLoginLink();
-    const homePageAfterLogin = new HomePage(newPage);
+    await inbox.openLoginLink();
+    const homePageAfterLogin = new HomePage(page);
     
     // Verify account menu displayed on top right of the page
     await homePageAfterLogin.verifyLoggedIn();
@@ -255,8 +255,8 @@ test.describe('User Registration and Login', () => {
     await inbox.verifyLoginEmail();
 
     // Open login email link (opens a popup)
-    const newPage = await inbox.openLoginLink();
-    const homePageAfterLogin = new HomePage(newPage);
+    await inbox.openLoginLink();
+    const homePageAfterLogin = new HomePage(page);
     
     // Verify account menu displayed on top right of the page
     await homePageAfterLogin.verifyLoggedIn();

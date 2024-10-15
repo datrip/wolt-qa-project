@@ -1,5 +1,7 @@
-// automation/playwright.config.ts
 import { PlaywrightTestConfig, devices } from '@playwright/test';
+import path from 'path';
+
+const authFile = path.resolve(__dirname, 'playwright/.auth/user.json');
 
 const config: PlaywrightTestConfig = {
   testDir: './tests',
@@ -14,12 +16,23 @@ const config: PlaywrightTestConfig = {
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     baseURL: 'https://wolt.com',
+    // Remove storageState here if it's project-specific
   },
   projects: [
+    // Setup project
+    {
+      name: 'setup',
+      testMatch: /.*\.setup\.ts/,
+    },
+    // Testing projects
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      //dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: authFile,
+      },
     },
-  ]
+  ],
 };
 export default config;
