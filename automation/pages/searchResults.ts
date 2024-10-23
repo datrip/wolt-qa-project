@@ -126,6 +126,8 @@ async applyFilter(): Promise<void> {
     }
   }
 
+
+
   async openFirstResult(){
     const venue = this.page.getByTestId("VenueVerticalListGrid").getByTestId(/^venueCard/);
 
@@ -199,5 +201,103 @@ async applyFilter(): Promise<void> {
       console.error('Error in getUserCoordinates:', error);
       return null;
     }
+  }
+
+  async verifyRatingSorting(): Promise<boolean> {
+    const venueCards = await this.page.$$('[data-test-id^="venueCard."]');
+    const ratings: number[] = [];
+  
+    for (const card of venueCards) {
+      const ariaLabel = await card.getAttribute('aria-label');
+      if (ariaLabel) {
+        const ratingMatch = ariaLabel.match(/Rating:\s*([^,]+)/);
+        if (ratingMatch) {
+          const ratingText = ratingMatch[1].trim();
+          const ratingValue = this.getRatingValue(ratingText);
+          ratings.push(ratingValue);
+        }
+      }
+    }
+  
+    // Check if ratings are in descending order
+    for (let i = 1; i < ratings.length; i++) {
+      if (ratings[i] > ratings[i - 1]) {
+        console.log(`Sorting error: ${ratings[i]} > ${ratings[i - 1]}`);
+        return false;
+      }
+    }
+  
+    return true;
+  }
+
+  private getRatingValue(ratingText: string): number {
+    switch (ratingText.toLowerCase()) {
+      case 'amazing':
+        return 5;
+      case 'excellent':
+        return 4;
+      case 'very good':
+        return 3;
+      case 'good':
+        return 2;
+      case 'okay':
+        return 1;
+      default:
+        return 0;
+    }
+  }
+
+  async verifyDeliveryPriceSorting(): Promise<boolean> {
+    const venueCards = await this.page.$$('[data-test-id^="venueCard."]');
+    const deliveryPrices: number[] = [];
+  
+    for (const card of venueCards) {
+      const ariaLabel = await card.getAttribute('aria-label');
+      if (ariaLabel) {
+        const deliveryPriceMatch = ariaLabel.match(/Delivery fee:\s*€(\d+\.?\d*)/);
+        if (deliveryPriceMatch) {
+          const deliveryPrice = parseFloat(deliveryPriceMatch[1]);
+          deliveryPrices.push(deliveryPrice);
+        }
+      }
+    }
+  
+    // Check if delivery prices are in ascending order
+    for (let i = 1; i < deliveryPrices.length; i++) {
+      if (deliveryPrices[i] < deliveryPrices[i - 1]) {
+        console.log(`Sorting error: ${deliveryPrices[i]} < ${deliveryPrices[i - 1]}`);
+        return false;
+      }
+    }
+  
+    return true;
+  }
+
+  async verifyDeliveryTimeSorting(): Promise<boolean> {
+    const venueCards = await this.page.$$('[data-test-id^="venueCard."]');
+    const deliveryTimes: number[] = [];
+  
+    for (const card of venueCards) {
+      const timeElement = await card.$('.b126jdn6');
+      if (timeElement) {
+        const timeText = await timeElement.textContent();
+        if (timeText) {
+          const [minTime, maxTime] = timeText.split('-').map(t => parseInt(t, 10));
+          // Use the average of min and max time for sorting
+          const averageTime = (minTime + maxTime) / 2;
+          deliveryTimes.push(averageTime);
+        }
+      }
+    }
+  
+    // Check if delivery times are in ascending order
+    for (let i = 1; i < deliveryTimes.length; i++) {
+      if (deliveryTimes[i] < deliveryTimes[i - 1]) {
+        console.log(`Sorting error: ${deliveryTimes[i]} < ${deliveryTimes[i - 1]}`);
+        return false;
+      }
+    }
+  
+    return true;
   }
 }
