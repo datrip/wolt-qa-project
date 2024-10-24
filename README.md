@@ -24,7 +24,7 @@ Personal (portfolio) project that includes a test plan, manual test cases and au
   - Automated Scripts Derived from Manual Test Cases
   - Developed in Parallel with Manual Testing
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 - **Testing Framework:** Playwright
 - **Language:** TypeScript
