@@ -47,7 +47,7 @@ Personal (portfolio) project that includes a test plan, manual test cases and au
 
 ## Future Plans
 
-- Complete automation of remaining manual test cases
+- Complete remaining manual test cases and automate them
 - Add error handling and edge case scenarios
 - Implement CI/CD pipeline with GitHub Actions for automated test execution
 - Set up cross-browser testing
