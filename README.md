@@ -58,18 +58,22 @@ Personal (portfolio) project that includes a test plan, manual test cases and au
 While this project is still in progress, you can explore the existing test cases and automation scripts:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/datrip/wolt-qa-project
    ```
 2. **Navigate to the project directory**:
+
    ```bash
    cd wolt-qa-project
    ```
 3. **Install dependencies** :
+
    ```bash
    npm install
    ```
 4. **Run automated tests**:
+
    ```bash
    npx playwright test
    ```
