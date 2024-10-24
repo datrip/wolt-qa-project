@@ -18,7 +18,7 @@ Personal (portfolio) project that includes a test plan, manual test cases and au
   - Detailed Test Steps with Screenshots
   - Defect Documentation
 
-- **Test Automation**
+- **Test Automation (In Progress)**
   - Built with Playwright + TypeScript
   - Implemented Page Object Model Architecture
   - Automated Scripts Derived from Manual Test Cases
