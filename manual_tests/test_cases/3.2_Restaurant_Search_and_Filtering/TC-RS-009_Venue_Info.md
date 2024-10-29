@@ -34,7 +34,7 @@
    - Click on **"See all"** to view all related venues.
 
 4. **Verify Key Information is Displayed for Each Venue**:
-   - For each venue listed, verify that the following information is displayed:
+   - For each venue listed, verify that the following information is displayed (if the venue is open and rated):
      - **Venue Name**: The name of the restaurant or store.
      - **Venue Description**: A brief description of the venue or the type of cuisine offered.
      - **Delivery Fee**: The delivery fee amount (e.g., "€0.00").
